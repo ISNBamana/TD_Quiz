@@ -1,0 +1,142 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  color: #403095;
+  text-align: center;
+}
+
+.container {
+  padding: 12px;
+}
+
+.question {
+  margin: auto;
+  max-width: 720px;
+  border: 1px solid #BBB;
+  border-radius: 6px;
+  box-shadow: 0 0 12px 0 #777;
+  overflow: hidden;
+}
+
+.question-statement {
+  padding: 18px;
+  background: #FAFAFA;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #BBB;
+}
+
+.question-answers {
+  padding: 12px;
+}
+
+.question-answers .answer {
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.question-answers .answer .answer-text {
+  padding: 12px;
+  border: 1px solid #BBB;
+  border-radius: 8px;
+}
+.question-answers .answer:hover {
+  background: #EEEEEE;
+}
+
+.question-answers .answer.active {
+  background: #EEF4EE;
+  font-weight: bolder;
+}
+
+.question-footer {
+  padding: 12px;
+  text-align: center;
+}
+
+.question-footer button {
+  cursor: pointer;
+  height: 48px;
+  padding: 0 32px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #1abc9c;
+  border: 0;
+  border-bottom: 2px solid #12ab8d;
+  box-shadow: inset 0 -2px #12ab8d;
+}
+.question-footer button:active {
+  top: 1px;
+  outline: none;
+  box-shadow: none;
+}
+
+.result-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 240px;
+  height: 80px;
+  background: #DDD;
+}
+
+
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+.result {
+  position: relative;
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+}
+.result h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+.result .content {
+  max-height: 30%;
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
